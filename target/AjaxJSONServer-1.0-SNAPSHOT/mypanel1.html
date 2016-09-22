@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ajax with Backend and Bootstrap Example</title>
+    <meta charset="utf-8">
+
+    <!-- Following  <meta name=viewport...> tag turns ON responsive features of Bootstrap by making  the site consume
+     all the space available inside the browser window, whether itʼs a tablet or a mobile or even a desktop screen.
+     We tell the browser to scale the application to the size of window space available -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Sometimes, Internet Explorer may run in compatibility mode. Using the following code snippet would force IE to
+     use the latest rendering engine to render our website.This will prevent our website from breaking as older
+     rendering engines do not support all properties of CSS.
+    -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/mypanel1.css">
+
+    <!-- Search engines look for Title tag -->
+
+    <!-- load javascript (jQ, bootstrap) towards the end to avoid delay in page loading-->
+    <!--  javascript should be loaded   -->
+    <script src="./js/ajaxjsonserver.js"></script>
+
+</head>
+<body>
+
+<div class="row">
+    <div class="col-md-3">
+        <div class="row">
+            <div class="cold-md-12 well">
+                <p class="subtitle">Local Weather</p>
+                <p id="localWeather"></p>
+            </div>
+            <div class="cold-md-12 well"> <!-- 4444444444-->
+                Save preferences to servlets (AJAX POST)
+                <div class="inputLabel">
+                    <p>Select Local City:</p>
+                </div>
+                <div class="Cell">
+                    <select name="city" id="city">
+                        <option value="pune">Pune</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="chennai">Chennai</option>
+                        <option value="banglore">Banglore</option>
+                        <option value="newdelhi">New Delhi</option>
+                        <option value="kolkata">Kolkata</option>
+                    </select>
+                    <div class="inputLabel">
+                        <p>Temperature Unit Preference:</p>
+                    </div>
+                    <input type="radio" id="cels-rb" name="temp-preference" value="Celsius"  required/><label for="cels-rb">Celsius</label>
+                    <input type="radio" id="fahr-rb" name="temp-preference" value="Fahrenheit"  required/><label for="fahr-rb">Fahrenheit</label>
+                    <br>
+                    <button type="button" onclick="savePref()">Save</button>
+                    <p id="saveStatus"></p>
+                </div>
+            </div> <!--                             444444444 -->
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="col-md-12">
+            <div class="well">
+                <h3>This is AJAX example created by Mandar Wadhavekar.</h3>
+                It makes several calls to AJAX.
+
+                The backend is written in JSP, Servlets
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="row">
+            <div class="cold-md-12 well">
+                <div class="cold-md-12 well">Weather in your Favorite City!<br/>
+                    <span id="cityWeather"></span>
+                </div>
+            </div>
+            <div class="cold-md-12 well">
+                <!-- 5 -->
+                <b>Stock Market Today</b><br>
+                
+                <p id="stock_infy"></p>
+                <p id="stock_rel"></p>
+                <p id="sensex"></p>
+                <p id="nifty"></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="./js/jquery-2.1.3.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

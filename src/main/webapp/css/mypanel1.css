@@ -1,0 +1,44 @@
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Start with max-width of Large Devices, Wide Screens */
+@media screen and (max-width: 1200px) {
+    body {
+        background-color: gold;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        background-color: lightcoral;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-color: burlywood;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    body {
+        background-color: greenyellow;
+    }
+}
+.subtitle {
+    font-family: Helvetica, Verdana, sans-serif; 
+    font-style: bold
+}
+#cityWeather {
+    color: dodgerblue;
+}
+
+#localWeather {
+    color: green;
+}
+

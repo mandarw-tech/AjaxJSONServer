@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery load () </title>
+    <script src="./js/jquery-2.1.3.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#btn1").click(function(){
+                console.log("Btn1 clicked");
+
+                $("#load_me").load("./templateA.html");
+            });
+            
+             $("#btn2").click(function(){
+                console.log("Btn2 clicked");
+
+                $("#load_me").load("./templateB.html");
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+Use of load()
+<p>The dive will be loaded after buttone click</p>
+
+<p>Another paragraph of this pages)</p>
+<button id="btn1">Button 1</button>
+
+<button id="btn2">Button 2</button>
+
+<div id="load_me"></div>
+
+</body>
+</html>

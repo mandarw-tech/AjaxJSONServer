@@ -1,0 +1,4 @@
+com\mw\ajaxjsonserver\util\AppUtil.class
+com\mw\ajaxjsonserver\util\Preferences.class
+com\mw\ajaxjsonserver\servlet\PreferencesServlet.class
+com\mw\ajaxjsonserver\servlet\WeatherServlet.class

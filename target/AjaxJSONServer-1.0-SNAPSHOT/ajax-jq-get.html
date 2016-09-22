@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Ajax using JQuery - GET</title>
+    <meta charset="utf-8">
+    <script src="./js/jquery-2.1.3.js"></script>
+</head>
+<body>
+    <h1> Simple AJAX Page using jQuery GET  </h1>
+    
+    <script>
+    $(document).ready(function(){
+       $("button").click(function(){
+           //jQuery AJAX-----------------------------
+           var stock = $("#stockcode").val();
+           
+           var myurl = "StockQuote.jsp";
+           
+           var jqxhr =
+            $.ajax({
+                url: myurl,
+            type : "GET",
+            data: {
+                company : stock                
+                }
+            })
+            .done (function(data) { /* process data */ 
+                 })
+            .fail (function()  { alert("Error ")   ; })
+            ;
+           //end JQuery AJAX
+           //WORKING CODE --------------- start
+           /*
+           var stock = $("#stockcode").val();
+           
+           var url = "StockQuote.jsp?company="+stock;
+           
+           console.log(url);
+           
+          $("#div1").load(url), function(responseTxt, statusTxt, xhr){
+            if(statusTxt === "success")
+                alert("External content loaded successfully!");
+            if(statusTxt === "error")
+                alert("Error: " + xhr.status + ": " + xhr.statusText);
+          };
+          */
+          //WORKING CODE --------------- end
+       });
+    }); //ready
+    </script>
+
+Enter Stock Code: <input id="stockcode" type="text">
+
+<div id="div1"><h2>jQuery AJAX Change This Text</h2></div>
+
+<button>Get Stock Quote using AJAX </button>
+</body>
+</html>

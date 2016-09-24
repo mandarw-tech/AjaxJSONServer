@@ -1,7 +1,5 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Added by Mandar Wadhavekar for Main Product
  */
 package com.mw.ajaxjsonserver.servlet;
 
@@ -40,7 +38,8 @@ public class WeatherServlet extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet WeatherServlet</title>");            
+	    //main 1.0
+            out.println("<title>Servlet WeatherServlet 1.0</title>");            
             out.println("</head>");
             out.println("<body>");
             out.println("<h1>Servlet WeatherServlet at " + request.getContextPath() + "</h1>");
@@ -49,7 +48,6 @@ public class WeatherServlet extends HttpServlet {
         }
     }
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *

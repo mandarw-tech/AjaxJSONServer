@@ -8,12 +8,15 @@ package com.mw.ajaxjsonserver.util;
 /**
  *
  * @author Mandar
+ * Added language preference for LANGUAGE
  */
 public class Preferences {
     
     private static Preferences instance = null;
     public static String CITY="PUNE";
     public static String TEMP_UNIT="Celsius";
+    //Added for Main branch
+    public static String LANGUAGE="English";
     
     public static Preferences getInstance() {
         if (instance == null) {

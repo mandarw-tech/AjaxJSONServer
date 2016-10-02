@@ -1,7 +1,6 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * Change log
+ * Changes for v1.1 in branch 1.1
  */
 package com.mw.ajaxjsonserver.servlet;
 
@@ -100,7 +99,7 @@ public class PreferencesServlet extends HttpServlet {
      */
     @Override
     public String getServletInfo() {
-        return "Short description";
+        return "Short description for BRANCH-v1.1";
     }// </editor-fold>
 
 }

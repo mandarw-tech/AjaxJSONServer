@@ -48,6 +48,7 @@ public class WeatherServlet extends HttpServlet {
         }
     }
 
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
      *
@@ -61,12 +62,13 @@ public class WeatherServlet extends HttpServlet {
             throws ServletException, IOException {
        // processRequest(request, response);
         String city = request.getParameter("city");
+       // Added v1.1 changes for feature Preferences City and Unit
         String resp_str="";
         int temp = AppUtil.getRandom(10, 45);
         if (city.equals("local")){       
-            resp_str = ""+Preferences.CITY+" - "+temp+" "+Preferences.TEMP_UNIT;
+            resp_str = "(v1.1) "+Preferences.CITY+" - "+temp+" "+Preferences.TEMP_UNIT;
         } else {
-            resp_str = ""+city+" - "+temp+" "+Preferences.TEMP_UNIT;
+            resp_str = "(v1.1) "+city+" - "+temp+" "+Preferences.TEMP_UNIT;
         }
         
     try {
